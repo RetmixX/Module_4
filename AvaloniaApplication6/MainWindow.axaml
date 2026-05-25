@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication6.MainWindow"
+        Title="Авторизация">
+    <StackPanel>
+        <Label Margin="0, 0, 0, 10">Авторизация</Label>
+        <TextBox Margin="0, 0, 0, 10" x:Name="Login"></TextBox>
+        <TextBox Margin="0, 0, 0, 10" x:Name="Password"></TextBox>
+        <Button Margin="0, 0, 0, 10" Click="AuthButton">Авторизация</Button>
+        <Label x:Name="ErrText" Foreground="Red"></Label>
+    </StackPanel>
+</Window>
