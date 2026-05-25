@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AvaloniaApplication6/AddUserPanel.axaml" value="AvaloniaApplication6/AvaloniaApplication6.csproj" />
+        <entry key="AvaloniaApplication6/AdminPanel.axaml" value="AvaloniaApplication6/AvaloniaApplication6.csproj" />
+        <entry key="AvaloniaApplication6/App.axaml" value="AvaloniaApplication6/AvaloniaApplication6.csproj" />
+        <entry key="AvaloniaApplication6/MainWindow.axaml" value="AvaloniaApplication6/AvaloniaApplication6.csproj" />
+        <entry key="AvaloniaApplication6/UserPanel.axaml" value="AvaloniaApplication6/AvaloniaApplication6.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

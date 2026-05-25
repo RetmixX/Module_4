@@ -5,6 +5,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using AvaloniaApplication6.Models;
 
+
 namespace AvaloniaApplication6;
 
 public partial class MainWindow : Window
@@ -31,7 +32,16 @@ public partial class MainWindow : Window
             return;
         }
         
-        
-        
+        AuthAppCtx.User = tempUser;
+
+        if (tempUser.Role == 0)
+        {
+            new UserPanel().Show();
+            this.Close();
+        } else if (tempUser.Role == 1)
+        {
+            new AdminPanel().Show();
+            this.Close();
+        }
     }
 }

@@ -8,6 +8,7 @@ public partial class AuthAppCtx : DbContext
 {
     public static User User;
     public static AuthAppCtx DB;
+    
     public AuthAppCtx()
     {
     }
@@ -34,6 +35,9 @@ public partial class AuthAppCtx : DbContext
             entity.Property(e => e.Id)
                 .UseIdentityAlwaysColumn()
                 .HasColumnName("id");
+            entity.Property(e => e.IsBlock)
+                .HasDefaultValue(0)
+                .HasColumnName("is_block");
             entity.Property(e => e.Login).HasColumnName("login");
             entity.Property(e => e.Password).HasColumnName("password");
             entity.Property(e => e.Role)

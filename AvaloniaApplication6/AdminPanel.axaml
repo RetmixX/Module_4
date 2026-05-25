@@ -2,10 +2,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:AvaloniaApplication6.Models"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication6.AdminPanel"
         Title="Панель администратора">
     <StackPanel>
-       
+        <Button Click="AddNewUser">Добавить пользователя</Button>
+        <Grid>
+            <DataGrid x:Name="UsersData" IsReadOnly="True" AutoGenerateColumns="False" x:DataType="models:User">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Логин" Binding="{Binding Login}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding Role}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Блокировка" Binding="{Binding IsBlock}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </StackPanel>
 </Window>
